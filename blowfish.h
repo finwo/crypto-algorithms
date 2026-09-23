@@ -11,13 +11,14 @@
 
 /*************************** HEADER FILES ***************************/
 #include <stddef.h>
+#include <stdint.h>
 
 /****************************** MACROS ******************************/
 #define BLOWFISH_BLOCK_SIZE 8           // Blowfish operates on 8 bytes at a time
 
 /**************************** DATA TYPES ****************************/
-typedef unsigned char BYTE;             // 8-bit byte
-typedef unsigned int  WORD;             // 32-bit word, change to "long" for 16-bit machines
+typedef uint8_t   BYTE;             // 8-bit byte
+typedef uint32_t  WORD;             // 32-bit word
 
 typedef struct {
    WORD p[18];

@@ -11,12 +11,13 @@
 
 /*************************** HEADER FILES ***************************/
 #include <stddef.h>
+#include <stdint.h>
 
 /****************************** MACROS ******************************/
 #define MD2_BLOCK_SIZE 16
 
 /**************************** DATA TYPES ****************************/
-typedef unsigned char BYTE;             // 8-bit byte
+typedef uint8_t   BYTE;             // 8-bit byte
 
 typedef struct {
    BYTE data[16];
